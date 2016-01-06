@@ -1,0 +1,15 @@
+sudo: required
+
+language: ruby
+
+services:
+  - docker
+
+before_install:
+  - docker build -t hello_docker_sinatra .
+  - docker run -d -p 3000:3000 hello_docker_sinatra
+  - docker ps -a
+  - docker run hello_docker_sinatra /bin/sh -c "bundle exec rspec"
+
+script:
+  - bundle exec rspec
