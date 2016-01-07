@@ -6,5 +6,5 @@ set :port, 3000
 set :logging, true
 
 get '/' do
-  'hello world from docker!'
+  'hello world from docker!This time deployed with travis!'
 end
