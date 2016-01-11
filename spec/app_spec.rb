@@ -14,6 +14,6 @@ describe 'The hello docker sinatra application' do
   it 'says hello' do
     get '/'
     expect(last_response).to be_ok
-    expect(last_response.body).to eq('hello world from docker!This time deployed with travis 2!')
+    expect(last_response.body).to eq('hello world from docker!This time deployed with travis 3!')
   end
 end
