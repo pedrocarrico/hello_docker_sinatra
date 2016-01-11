@@ -10,14 +10,14 @@ script:
   - docker run hello_docker_sinatra /bin/sh -c "bundle exec rspec"
 deploy:
   provider: elasticbeanstalk
-  access_key_id: AKIAIMCSPOSWRI3O5GNQ
+  access_key_id: xxx
   secret_access_key:
-    secure: Dx8Zse7DAVCSKn+9777+dhpFdCINeWVYTiEcTENWqYLz2+oC/nCKJCKtVJ51G7fvHXPBjUqYjBaDRr+DzOh+NXRgLQNkNrBYrKgyipUqwNmLBEHw7EQPWrJ45MrqmL6TbsO2q2btrfn5gznYiOAuqTaBX+doO9ebrf8n2GGwXuKnTRIrePMkwmk0TJVbwb1bin0P2oKkCwLQKmx0y/190zyXi6CSSlMcOrwn2d7xNKm6tskykJ71xhp/oD7AUfBj0EN2Mi/Rg1CKBjQO4nqREw9ukk0U+MEOpuXg7HVhP3MJ4QqTKMqzRJRVkJwZYPOSsHFCgzUsnfePGasJknySIrHHYKsJohZ9ObZOiDbJVhbc9ymv8vy8O1/vEfuRz/Ke5hQP1uR0g0VTOjJsrx9o2E8Fh4/Wsrsu1aZf0V2fT+6eGLzGcqAsVFefUNdToTYKYbnU8BjWJkF0p2SFRrUe8FCLEOtoEB+o8SM+8yLd0kFc8B1Zv70c+gc6D6y5gAXYme/4VSIDSM1EAZbrEoh4tOrREAhT9NU4euD8t6RqLqOzFoAuViK9cvRL4hHYc0SW3Wduu0ebp+yerp8lL19zWevwB9Pz919QO7fWZfBvJsRxlqZd+lFm3sD2bHvvGFn7VdmD82YkfrSJlpL71DVk44tV8AR4nOmZEL25e1N9Rys=
+    secure: xxx
   region: us-east-1
   skip_cleanup: true
   app: hello docker sinatra
   env: helloDockerSinatra
-  bucket_name: elasticbeanstalk-us-east-1-656059336158
+  bucket_name: xxx
   on:
     repo: pedrocarrico/hello_docker_sinatra
     branch: master
